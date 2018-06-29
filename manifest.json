@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "Easy SharePoint",
+  "description": "Navigate to different pages in SharePoint with the click of a button",
+  "version": "1.0",
+  "offline_enabled": true,
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    "scriptInjections/closeConnection.js",
+    "scriptInjections/designManager.js",
+    "scriptInjections/peopleAndGroups.js",
+    "scriptInjections/recycleBin.js",
+    "scriptInjections/siteCollectionAdmins.js",
+    "scriptInjections/siteCollectionFeatures.js",
+    "scriptInjections/siteColumns.js",
+    "scriptInjections/siteContents.js",
+    "scriptInjections/siteContentTypes.js",
+    "scriptInjections/siteFeatures.js",
+    "scriptInjections/sitePermissions.js",
+    "scriptInjections/siteSettings.js",
+    "scriptInjections/termStore.js",
+    "scriptInjections/userAlerts.js"
+  ],
+  "page_action": {
+    "default_title": "Easy SharePoint",
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
