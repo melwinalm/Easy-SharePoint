@@ -1,5 +1,7 @@
 # Easy-SharePoint
 
+![Easy SharePoint Preview](https://github.com/melwinalm/Easy-SharePoint/blob/master/Easy%20SharePoint.png)
+
 Navigate to different pages in SharePoint with the click of a button
 
 Following are features currently supported
